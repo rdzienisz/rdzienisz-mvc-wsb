@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using rdzienisz.Models;
 using System.Diagnostics;
 
@@ -19,6 +20,12 @@ namespace rdzienisz.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Movies()
         {
             return View();
         }
