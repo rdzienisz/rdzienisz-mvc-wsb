@@ -1,0 +1,1 @@
+Zaliczenie CRUD (MVC) + autoryzacja
